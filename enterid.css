@@ -1,0 +1,166 @@
+*{
+    margin: 0; /*Margin around the elements outside of defined borders (top,right,bottom,left)*/
+    padding: 0; /*Generate space around an element, inside of defined borders (top, right, bottom, left)*/
+    text-decoration: none; /*Sets the text's decoration - overline, underline, line-through*/
+    font-family: 'Montserrat'; /*Text-font from Google API*/
+    box-sizing: border-box; /*Defines how the width and height are calculated, whether to include padding and borders or not*/
+    font-weight: 400; /*Sets how thick or thin characters in text should be displayed*/
+}
+
+body{
+    min-height: 100vh; /*Defines the minimum height of an element, if content's height is smaller than minimum - min-height will be applied*/
+    //background-image: linear-gradient(120deg,#05c46b, #2c3e50, #1e272e); /*Sets the background image, used here because lineargradient cannot be used on bg-color*/
+}
+a
+{
+  text-decoration: none;
+}
+
+.btn-link{
+    font-family: 'Montserrat';
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(120deg,#05c46b, #2c3e50, #1e272e);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    left: 50%;
+    right: 50%;
+}
+
+.btn-link:hover{
+    background-position: right;
+}
+.comp-reg-form{
+    width: 360px; /*Width of div in pixels*/
+    background: #f1f1f1; /*Background color of the div*/
+    height: 500px; /*Height of the div in pixels*/
+    padding: 80px 40px; /*Generate space around an element, inside of defined borders (top, right, bottom, left)*/
+    border-radius: 10px; /*Radius of the border edges*/
+    position: absolute; /*Looks for parent or gp, having position: relative else takes the body by default*/
+    left: 25%; /*How far away from the left - goes out of the flow of the rest of the document*/
+    top: 50%; /*How far away from the top - goes out of the flow of the rest of the document - depending on position property*/
+    transform: translate(-50%,-50%); /*Applies 3D or 2D transformations to elements - Translate, Rotate, Skew, Scale*/
+}
+
+.comp-reg-form h1{
+    text-align: center; /*Describes how inline contents of a block are horizontally aligned if the contents do not completely fill the line box.*/
+    margin-bottom: 50px; /*Sets the bottom margin of an element*/
+    font-size: 35px; /*Sets the font size*/
+}
+
+.comp-login-form{
+    width: 720px; /*Width of div in pixels*/
+    background: #f1f1f1; /*Background color of the div*/
+    height: 350px; /*Height of the div in pixels*/
+    padding: 80px 40px; /*Generate space around an element, inside of defined borders (top, right, bottom, left)*/
+    border-radius: 10px; /*Radius of the border edges*/
+    position: absolute; /*Looks for parent or gp, having position: relative else takes the body by default*/
+    left: 50%; /*How far away from the left - goes out of the flow of the rest of the document*/
+    top: 50%; /*How far away from the top - goes out of the flow of the rest of the document - depending on position property*/
+    transform: translate(-50%,-50%); /*Applies 3D or 2D transformations to elements - Translate, Rotate, Skew, Scale*/
+}
+
+.comp-login-form h1{
+    text-align: center; /*Describes how inline contents of a block are horizontally aligned if the contents do not completely fill the line box.*/
+    margin-bottom: 60px; /*Sets the bottom margin of an element*/
+    font-size: 35px; /*Sets the font size*/
+}
+
+.cmptxtb{
+    border-bottom: 2px solid #adadad; /*Sets the style of the bottom border for different elements*/
+    position: relative; /* Adjusted away from its normal position*/
+    margin: 30px 0; /*Sets the margin of an element, outside of defined borders*/
+}
+
+.cmptxtb input{
+    font-size: 15px; /*Sets the font size*/
+    color: #333; /*Sets the color of the input type*/
+    border: none; /*Specifies what kind of border to display - dotted, dashed, solid, double, hidden.....*/
+    outline: none; /*Outline is the line drawn around the elements, OUTSIDE the borders, to make the element "standout"*/
+    background: none; /*Shorthand property for color, image, position, size, repeat....*/
+    padding: 0 5px; /*Generate space around an element, inside of defined borders (top, right, bottom, left)*/
+    height: 40px; /*Height of the div in pixels*/
+}
+
+.cmptxtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+    font-size: 17px;
+}
+
+.cmptxtb span::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 0px;
+    background: linear-gradient(120deg,#05c46b,#2c3e50,#1e272e);
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.cmpregbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#05c46b,#2c3e50,#1e272e);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cmpregbtn:hover{
+    background-position: right;
+}
+
+.cmplogbtn{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#05c46b,#2c3e50,#1e272e);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cmplogbtn:hover{
+    background-position: right;
+}
+
+.vl{
+    border-left: 2px solid #1e272e;
+    height: 75%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 10%;
+    background: linear-gradient(120deg,#05c46b,#2c3e50,#1e272e);
+}

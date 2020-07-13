@@ -1,0 +1,135 @@
+body
+{
+	/*background-image: linear-gradient(120deg,#05c46b, #2c3e50, #1e272e);*/
+	
+	font-family: 'Montserrat', sans-serif;
+	
+	font-weight: 400;
+
+}
+
+.text-box
+{	
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	padding: 40px 40px;
+	font-size: 20px;	
+}
+
+.result
+{
+	top: 10%;
+	left: 5%;
+	right: 15%;
+	position: absolute;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.btn-link{
+    font-family: 'Montserrat';
+    display: block;
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(120deg,#05c46b, #2c3e50, #1e272e);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    left: 50%;
+    right: 50%;
+}
+
+.btn-link:hover{
+    background-position: right;
+}
+
+.result h1
+{
+	font-size: 50px;
+	transition: 0.5s;
+}
+
+.cnfrmbtn{
+    display: block;
+    width: 50%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#05c46b, #2c3e50, #1e272e);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    left: 75% ;
+
+}
+
+.cnfrmbtn:hover{
+    background-position: right;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.head-delay {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.tb-delay {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+   
+      }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+
+
