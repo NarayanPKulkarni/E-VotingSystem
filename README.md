@@ -1,2 +1,2 @@
 # E-VotingSystem
-A web application for online voting system.
+Source code of a web application for online voting system.
